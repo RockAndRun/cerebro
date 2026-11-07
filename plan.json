@@ -1,0 +1,21 @@
+{
+  "version": "2026-11-07",
+  "juegosPorSesion": 4,
+  "juegosFinDeSemana": 5,
+  "diasEntreEvaluaciones": 120,
+  "juegos": {
+    "palabras": { "peso": 1 },
+    "digitos": { "peso": 1 },
+    "atencion": { "peso": 0.7 },
+    "fluidez": { "peso": 1 },
+    "simbolos": { "peso": 1 },
+    "trazos": { "peso": 1 },
+    "stroop": { "peso": 1 },
+    "torre": { "peso": 1 },
+    "nback": { "peso": 1.2 },
+    "cambio": { "peso": 1 },
+    "series": { "peso": 1 }
+  },
+  "nivelForzado": {},
+  "mensaje": "Bienvenido. Empieza por la evaluación inicial cuando tengas 40 minutos tranquilos."
+}
