@@ -141,7 +141,7 @@
     try {
       const ok = await Envio.enviarPendientes();
       await intro(ok ? 'Enviado' : 'No enviado', ok
-        ? '<p>Resultados entregados. Comprueba que los guardaste en la carpeta <b>Cerebro-datos</b> de Drive.</p>'
+        ? '<p>Resultados entregados. Comprueba que los guardaste en la carpeta <b>Cerebro-datos</b> de Dropbox.</p>'
         : '<p>Has cancelado el envío. Quedan pendientes y podrás enviarlos desde el inicio.</p>', 'Volver al inicio');
     } catch (e) {
       await intro('No se pudo enviar', `<p>${esc(e.message || e)}</p><p>Los resultados siguen guardados en el móvil.</p>`, 'Volver al inicio');
@@ -151,7 +151,7 @@
 
   async function final(ses, msg) {
     const v = await ask(`<h2>Resumen</h2>${msg}<ul class="list">${resumen(ses)}</ul>
-      <button class="big" data-v="drive">Guardar en Drive</button><button class="big alt" data-v="inicio">Ahora no</button>`);
+      <button class="big" data-v="drive">Guardar resultados</button><button class="big alt" data-v="inicio">Ahora no</button>`);
     return v === 'drive' ? enviar() : inicio();
   }
 
@@ -188,7 +188,7 @@
       <p class="small">${semana} sesiones en los últimos 7 días${entrenoHoy ? ' · <b>hoy ya has entrenado ✔</b>' : ''}</p>
       ${botonEval}
       <button class="big ${ultimaEval || d.evalEnCurso ? '' : 'alt'}" data-v="entreno">Entrenamiento de hoy (≈15 min)</button>
-      ${pend ? `<button class="big warn" data-v="drive">Guardar en Drive (${pend} pendiente${pend > 1 ? 's' : ''})</button>` : ''}
+      ${pend ? `<button class="big warn" data-v="drive">Guardar resultados (${pend} pendiente${pend > 1 ? 's' : ''})</button>` : ''}
       <button class="big alt" data-v="hist">Historial</button>
       ${ultimaEval && !botonEval ? '<button class="link" data-v="eval">Hacer una evaluación ahora</button>' : ''}
       ${UI.hasMic ? '' : '<p class="small warn-text">Este navegador no permite reconocer voz: en las pruebas habladas tendrás que escribir. Usa Chrome en Android.</p>'}`);
