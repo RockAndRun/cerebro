@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-07",
+  "version": "2026-11-08",
   "juegosPorSesion": 4,
   "juegosFinDeSemana": 5,
   "diasEntreEvaluaciones": 120,
@@ -17,5 +17,5 @@
     "series": { "peso": 1 }
   },
   "nivelForzado": {},
-  "mensaje": "Bienvenido. Empieza por la evaluación inicial cuando tengas 40 minutos tranquilos."
+  "mensaje": "Toca entrenar: de lunes a viernes, unos 15 minutos al final del día. La constancia es lo que más cuenta."
 }
