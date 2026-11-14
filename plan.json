@@ -1,12 +1,12 @@
 {
-  "version": "2026-11-08",
+  "version": "2026-11-14",
   "juegosPorSesion": 4,
   "juegosFinDeSemana": 5,
   "diasEntreEvaluaciones": 120,
   "juegos": {
     "palabras": { "peso": 1 },
-    "digitos": { "peso": 1 },
-    "atencion": { "peso": 0.7 },
+    "digitos": { "peso": 1.2 },
+    "atencion": { "peso": 1 },
     "fluidez": { "peso": 1 },
     "simbolos": { "peso": 1 },
     "trazos": { "peso": 1 },
